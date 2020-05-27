@@ -1,6 +1,6 @@
 {
   "name": "screen-reader-focus-trap",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Focus trap that works for keyboard users and screen reader users",
   "main": "dist/main.cjs.min.js",
   "module": "dist/main.esm.min.js",
