@@ -1,0 +1,93 @@
+{
+  "name": "screen-reader-focus-trap",
+  "version": "0.0.0",
+  "description": "Focus trap that works for keyboard users and screen reader users",
+  "main": "dist/main.cjs.min.js",
+  "module": "dist/main.esm.min.js",
+  "browser": "dist/main.umd.min.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thawkin3/screen-reader-focus-trap.git"
+  },
+  "keywords": [
+    "accessibile",
+    "accessibility",
+    "aria",
+    "a11y",
+    "focus trap",
+    "jaws",
+    "keyboard",
+    "keyboard only",
+    "nvda",
+    "screen reader",
+    "voice over"
+  ],
+  "author": "Tyler Hawkins (http://tylerhawkins.info)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thawkin3/screen-reader-focus-trap/issues"
+  },
+  "homepage": "http://tylerhawkins.info/screen-reader-focus-trap/storybook-dist",
+  "scripts": {
+    "build": "NODE_ENV=production rollup --config",
+    "build-storybook": "build-storybook -c .storybook -o storybook-dist",
+    "cz": "git-cz",
+    "eslint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint": "run-p eslint prettier stylelint",
+    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\"",
+    "prettier-watch": "onchange \"**/*.{js,jsx,ts,tsx,md}\" -- prettier --write {{changed}}",
+    "release": "standard-version",
+    "storybook": "start-storybook -p 9009",
+    "stylelint": "stylelint --fix --allow-empty-input \"src/**/*.css\"",
+    "test": "NODE_ENV=test jest",
+    "test:coverage": "NODE_ENV=test jest --coverage",
+    "test:watch": "NODE_ENV=test jest --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.10.0",
+    "@babel/preset-env": "^7.10.0",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.0.1",
+    "babel-loader": "^8.1.0",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.13.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.20.0",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "lint-staged": "^10.2.6",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.0.2",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rollup": "^2.10.9",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-delete": "^1.2.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "standard-version": "^8.0.0",
+    "storybook-readme": "^5.0.8",
+    "stylelint": "^13.5.0",
+    "stylelint-config-standard": "^20.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}

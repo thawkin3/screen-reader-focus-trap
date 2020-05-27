@@ -1,0 +1,11 @@
+/.vscode
+.idea
+/build
+/coverage
+/dist
+/node_modules
+/storybook-dist
+package.json
+CHANGELOG.md
+*.css
+.github/
